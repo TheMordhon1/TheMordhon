@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mordhon</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-body font-poppins text-white pb-12">
+    <header class="py-6 fixed md:relative w-full top-0 bg-body">
+      <div
+        class="
+          container
+          flex
+          justify-between
+          items-center
+          mx-auto
+          px-8
+          md:px-14
+          lg:px-24
+          w-full
+        "
+      >
+        <div class="text-lg font-bold">TheMordhon.</div>
+        <div class="hidden md:flex space-x-12 items-center">
+          <a href="#" class="text-selected-text">Home</a>
+          <a href="#mywork">My work</a>
+          <a href="#clients">Clients</a>
+          <a href="#hire"
+            ><button class="px-6 py-2 bg-theme font-bold">Hire me</button></a
+          >
+        </div>
+
+        <div class="md:hidden">
+          <svg
+            width="38"
+            height="24"
+            viewBox="0 0 38 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M35.6531 2H18.6531"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M36 12H2"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M19 22H2"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="
+        container
+        mt-16
+        flex
+        justify-between
+        items-center
+        mx-auto mx-auto
+        px-8
+        md:px-14
+        lg:px-24
+      "
+    >
+      <div class="flex flex-wrap md:flex-nowrap">
+        <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+          <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
+            <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+            </a>
+            <a href="#mywork" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">MyWork</span>
+            </a>
+            <a href="#clients" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Clients</span>
+            </a>
+            <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">HireMe</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-36 md:my-32">
+          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">Building<br>beautiful web experiences</h1>
+          <div class="w-full flex justify-center md:justify-start">
+            <a href="#mywork" class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
+              <div>
+                <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C12.4546 0 12.8905 0.184354 13.212 0.512506C13.5334 0.840658 13.714 1.28573 13.714 1.7498V22.023L21.0704 14.5094C21.2297 14.3467 21.4189 14.2176 21.6271 14.1296C21.8353 14.0415 22.0585 13.9962 22.2839 13.9962C22.5092 13.9962 22.7324 14.0415 22.9406 14.1296C23.1488 14.2176 23.338 14.3467 23.4974 14.5094C23.6567 14.6721 23.7831 14.8652 23.8694 15.0778C23.9556 15.2903 24 15.5182 24 15.7482C24 15.9783 23.9556 16.2061 23.8694 16.4187C23.7831 16.6313 23.6567 16.8244 23.4974 16.9871L13.2135 27.4859C13.0543 27.6489 12.8651 27.7782 12.6569 27.8664C12.4487 27.9546 12.2254 28 12 28C11.7746 28 11.5513 27.9546 11.3431 27.8664C11.1349 27.7782 10.9457 27.6489 10.7865 27.4859L0.502647 16.9871C0.343288 16.8244 0.216878 16.6313 0.130634 16.4187C0.0443894 16.2061 0 15.9783 0 15.7482C0 15.5182 0.0443894 15.2903 0.130634 15.0778C0.216878 14.8652 0.343288 14.6721 0.502647 14.5094C0.824486 14.1808 1.26099 13.9962 1.71614 13.9962C1.94151 13.9962 2.16467 14.0415 2.37288 14.1296C2.58109 14.2176 2.77028 14.3467 2.92964 14.5094L10.286 22.023V1.7498C10.286 1.28573 10.4666 0.840658 10.788 0.512506C11.1095 0.184354 11.5454 0 12 0Z" fill="white"/>
+                  </svg>
+                  
+              </div>
+              <span>My Works</span>
+            </a>
+          </div>
+        </div>
+
+        <img src="./img/hero-img.png" alt="clock and Tumbler img" class="w-1/2 mt-12 md:absolute -mt-6 md:mt-0 right-0 -z-1">
+      </div>
+    </div>
+
+    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 id="mywork" class="secondary-title">MyWork</h2>
+        <p class="section-paragraph">I have the pleasure of working with multiple companies, designing and implementing to frontend</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+          <img src="" alt="MyWork w/ Gatemarried">
+          <img src="" alt="MyWork w/ Custco">
+          <img src="" alt="MyWork w/ PT.PMLI(perpus.pmli.co.id)">
+          <img src="" alt="MyWork w/ Qurmal">
+          <img src="" alt="MyWork w/ Eziboga">
+          <img src="" alt="MyWork w/ Tokostylish">
+          <img src="" alt="MyWork w/ Impay">
+          <img src="" alt="MyWork w/ Harveee Project">
+          <img src="" alt="MyWork w/ Financial Dashboard">
+          <img src="" alt="MyWork w/ Mobile Music">
+          <img src="" alt="MyWork w/ agency web">
+          <img src="" alt="MyWork w/ iWork">
+
+        </div>
+      </section>
+    </div>
+
+    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 id="clients" class="secondary-title">Clients</h2>
+        <p class="section-paragraph">I have work with various clients most of them are from startup. </p>
+        <div class="space-y-12 my-16">
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">Gatemarried.com</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">User Interface</div>
+                <div class="badge">Wordpress</div>
+                <div class="badge">Frontend</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">Custco.id</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">User Interface</div>
+                <div class="badge">Wordpress</div>
+                <div class="badge">Frontend</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">PT.PMLI/IPC University</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">App Design</div>
+                <div class="badge">Frontend</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">Eziboga.com</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">Frontend</div>
+                <div class="badge">Landing Page</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">Impay</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">UI/UX</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+
+          <div class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <!-- Logo -->
+            <div class="mb-6 lg:mb-0">
+              <img src="" alt="Company Logo">
+            </div>
+            <!-- Client info -->
+            <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 class="text-white text-3xl font-semibold">Tokostylish.online</h3>
+              <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div class="badge">Frontend</div>
+                <div class="badge">Wordpress</div>
+              </div>
+
+              <p class="text-secondary">So much fun working with this team, i learn a lot.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      <section class="w-full">
+        <h2 id="hire" class="secondary-title">HireMe</h2>
+        <p class="section-paragraph">Feel free to contact me any time, through any method below</p>
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+          <div class="space-y-12">
+            <div>
+              <label for="" class="text-white block mb-6 text-xl font-bold">Name</label>
+              <input type="text" class="w-full border border-input-border bg-input px-4 py-4">
+            </div>
+            <div>
+              <label for="" class="text-white block mb-6 text-xl font-bold">Email</label>
+              <input type="text" class="w-full border border-input-border bg-input px-4 py-4">
+            </div>
+            <div>
+              <label for="" class="text-white block mb-6 text-xl font-bold">Message</label>
+              <textarea name="" id="" cols="30" rows="10" class="w-full border border-input-border bg-input px-4 py-4"></textarea>
+            </div>
+            <button class="px-6 py-2 bg-theme text-white font-bold">Send it</button>
+          </div>
+
+          <div class="mt-12">
+            <!-- Contact Info -->
+            <p class="text-secondary">+62878-8360-1467</p>
+            <a href="mailto:romdhonm12@gmail.com" class="text-secondary underline">romdhonm12@gmail.com</a>
+
+            <!-- Socials -->
+            <div class="flex mt-20 space-x-6">
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
