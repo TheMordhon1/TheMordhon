@@ -4,9 +4,12 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwind -i ./index.css -o ./tailwind.css -w" 
+    "build": "npx tailwind -i ./index.css -o ./tailwind.css -w"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rellax": "^1.12.1"
+  }
 }

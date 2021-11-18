@@ -21,6 +21,12 @@ html, body {
 .-z-1 {
     z-index: -1;
 }
+.z-1 {
+    z-index: 1;
+}
+.z-9k {
+    z-index: 9000;
+}
 
 .secondary-title {
     @apply text-3xl font-bold;
@@ -43,6 +49,10 @@ html, body {
     scroll-margin-top: 100px;
 }
 
+header {
+    z-index: 10000;
+}
+
 .left-percentage {
     left: 5%;
 }
@@ -62,3 +72,123 @@ html, body {
 .nav-dot:hover span {
     opacity: 1;
 }
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.footer-info {
+    z-index: 1;
+}
+
+@media(max-width: 35em) {
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: fixed;
+        padding: min(30vh, 10rem) 2em;
+        inset: 0 0 0 15%;
+        background:hsl(0 0% 0% / 0.9);
+        z-index: 9998;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+    }
+
+    .nav-mobile[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .nav-mobile {
+        background:hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+        }
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        z-index: 9999;
+    }
+}
+
+/* Lightbox Mywork */
+
+.panel .panel-body {
+    position: relative;
+    padding: 0 !important;
+    overflow: hidden;
+    height: auto;
+}
+
+.panel .panel-body a img {
+    display: block;
+    margin: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.panel .panel-body .zoom:hover img {
+    transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+    -o-transform: scale(1.18);
+    -moz-transform: scale(1.18);
+}
+
+.panel .panel-body .zoom span.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .25s ease-out;
+    -moz-transition: opacity .25s ease-out;
+    -webkit-transition: opacity .25s ease-out;
+    -o-transition: opacity .25s ease-out;
+}
+
+.panel .panel-body .zoom:hover span.overlay {
+    display: block;
+    visibility: visible;
+    opacity: 0.55;
+    -moz-opacity: 0.55;
+    -webkit-opacity: 0.55;
+    filter: alpha(opacity=65);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+}
+
+.panel .panel-body .zoom:hover span.overlay h4 {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 100%;
+    font-size: 2.25em;
+    color: #fff !important;
+    text-align: center;
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+}
+
+.panel .text-white {
+    transition: transform 350ms ease-in ;
+}
+.panel .text-white:hover span {
+    position: relative;
+    transform: translateX(-20px);
+}
+.panel .text-white:hover .arrow-right {
+    opacity: 1;
+    top: 28%;
+    right: 25%;
+}
+
